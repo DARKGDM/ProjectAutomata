@@ -1,2 +1,8 @@
-# Modpack
-S.T.A.L.K.E.R Anoamly Modpack de Rendimiento
+Repositorio:
+github.com/Jonathan/MiPagina
+
+Sitio publicado:
+https://mipagina.github.io
+
+Dominio personalizado:
+https://miproyecto.algo
