@@ -20,214 +20,195 @@ html{
 }
 
 body{
-
     font-family:'Segoe UI',sans-serif;
-
     background:
     radial-gradient(circle at top,
     #0d1b3f 0%,
     #071126 35%,
     #030712 100%);
-
     color:#ffffff;
+    padding-top:70px; /* Espacio para la barra fija */
+}
+
+/* NAVBAR SUPERIOR */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#030712;
+    border-bottom:1px solid #1e293b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    z-index:1000;
+}
+
+.nav-brand{
+    color:#60a5fa;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#cbd5e1;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
 }
 
 /* HERO */
 
 .hero{
-
-    min-height:100vh;
-
+    min-height:90vh;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-
     text-align:center;
     padding:40px;
 }
 
 .hero h1{
-
     font-size:4rem;
     color:#60a5fa;
-
     margin-bottom:15px;
 }
 
 .author-tag{
-
     display:inline-block;
-
     padding:12px 25px;
-
     border:1px solid #60a5fa;
-
     border-radius:40px;
-
     color:#60a5fa;
-
     margin-bottom:25px;
-
     font-weight:bold;
 }
 
 .hero p{
-
     max-width:800px;
-
     font-size:1.2rem;
-
     color:#cbd5e1;
-
     line-height:1.8;
 }
 
 .btn{
-
     margin-top:40px;
-
     padding:14px 30px;
-
     background:#2563eb;
-
     color:white;
-
     text-decoration:none;
-
     border-radius:10px;
-
     transition:.3s;
 }
 
 .btn:hover{
-
     background:#3b82f6;
-
     transform:translateY(-3px);
 }
 
 /* SECCIONES */
 
 section{
-
     padding:100px 10%;
 }
 
 .section-title{
-
     text-align:center;
-
     font-size:2.5rem;
-
     color:#60a5fa;
-
     margin-bottom:50px;
 }
 
 .about{
-
     max-width:900px;
-
     margin:auto;
-
     text-align:center;
-
     color:#cbd5e1;
-
     font-size:1.1rem;
 }
 
 /* TARJETAS */
 
 .cards{
-
     display:grid;
-
     grid-template-columns:
     repeat(auto-fit,minmax(260px,1fr));
-
     gap:25px;
 }
 
 .card{
-
     background:#111c35;
-
     border:1px solid #223258;
-
     border-radius:15px;
-
     padding:30px;
-
     transition:.3s;
 }
 
 .card:hover{
-
     border-color:#60a5fa;
-
     transform:translateY(-8px);
 }
 
 .card h3{
-
     color:#93c5fd;
-
     margin-bottom:15px;
 }
 
 /* AUTOR */
 
 .author-box{
-
     max-width:800px;
-
     margin:auto;
-
     text-align:center;
-
     padding:40px;
-
     background:#111c35;
-
     border:1px solid #60a5fa;
-
     border-radius:15px;
 }
 
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #60a5fa;
+    margin-bottom:20px;
+    box-shadow:0 0 15px rgba(96,165,250,0.3);
+}
+
 .author-box h3{
-
     font-size:2rem;
-
     color:#60a5fa;
-
     margin-bottom:15px;
 }
 
 .brand{
-
     margin-top:20px;
-
     color:#60a5fa;
-
     font-weight:bold;
-
     font-size:1.1rem;
 }
 
 /* FOOTER */
 
 footer{
-
     margin-top:80px;
-
     padding:40px;
-
     text-align:center;
-
     background:#020617;
-
     color:#94a3b8;
 }
 
@@ -237,22 +218,30 @@ footer{
 
 <body>
 
-<header class="hero">
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-brand">MI Portafolio</div>
+    <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Sobre el Proyecto</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#autor">Autor</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hero">
 
 <h1>Project Automata</h1>
 
 <div class="author-tag">
-
 Developed by Jonathan Santos • DARKGDM
-
 </div>
 
 <p>
-
 Proyecto académico centrado en el desarrollo web,
 automatización digital y aplicación de tecnologías
 modernas para la creación de soluciones innovadoras.
-
 </p>
 
 <a href="#about" class="btn">
@@ -270,19 +259,17 @@ Sobre el Proyecto
 <div class="about">
 
 <p>
-
 Project Automata es una iniciativa académica creada
 para demostrar conocimientos en diseño web,
 publicación de sitios en línea y utilización
 de herramientas modernas de desarrollo.
-
 </p>
 
 </div>
 
 </section>
 
-<section>
+<section id="tecnologias">
 
 <h2 class="section-title">
 Tecnologías Utilizadas
@@ -346,7 +333,7 @@ Objetivos
 
 </section>
 
-<section>
+<section id="autor">
 
 <h2 class="section-title">
 Autor del Proyecto
@@ -354,20 +341,19 @@ Autor del Proyecto
 
 <div class="author-box">
 
+<!-- Guarda la imagen del ojo azul oscuro como mi-foto.jpg en tu repositorio -->
+<img src="mi-foto.jpg" alt="Jonathan Santos" class="profile-img">
+
 <h3>Jonathan Santos</h3>
 
 <p>
-
 Desarrollador de Project Automata y responsable
 del diseño, implementación y publicación
 de este proyecto académico.
-
 </p>
 
 <div class="brand">
-
 Powered by DARKGDM
-
 </div>
 
 </div>
