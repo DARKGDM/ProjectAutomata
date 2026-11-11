@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Project Automata</title>
+<title>Project Automata | Portafolio Oficial</title>
 
 <style>
 
@@ -98,7 +98,7 @@ body{
 }
 
 .hero p{
-    max-width:800px;
+    max-width:850px;
     font-size:1.2rem;
     color:#cbd5e1;
     line-height:1.8;
@@ -133,11 +133,31 @@ section{
 }
 
 .about{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
-    text-align:center;
     color:#cbd5e1;
     font-size:1.1rem;
+    line-height:1.8;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.about-card{
+    background:#111c35;
+    border:1px solid #223258;
+    padding:25px;
+    border-radius:12px;
+}
+
+.about-card h3{
+    color:#93c5fd;
+    margin-bottom:10px;
+    font-size:1.2rem;
 }
 
 /* TARJETAS */
@@ -167,10 +187,15 @@ section{
     margin-bottom:15px;
 }
 
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
 /* AUTOR */
 
 .author-box{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     text-align:center;
     padding:40px;
@@ -195,6 +220,11 @@ section{
     margin-bottom:15px;
 }
 
+.author-box p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
 .brand{
     margin-top:20px;
     color:#60a5fa;
@@ -210,6 +240,7 @@ footer{
     text-align:center;
     background:#020617;
     color:#94a3b8;
+    line-height:1.6;
 }
 
 </style>
@@ -220,11 +251,12 @@ footer{
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="nav-brand">MI Portafolio</div>
+    <div class="nav-brand">Project Automata</div>
     <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#about">Sobre el Proyecto</a></li>
         <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
         <li><a href="#autor">Autor</a></li>
     </ul>
 </nav>
@@ -239,9 +271,8 @@ Developed by Jonathan Santos • DARKGDM
 </div>
 
 <p>
-Proyecto académico centrado en el desarrollo web,
-automatización digital y aplicación de tecnologías
-modernas para la creación de soluciones innovadoras.
+Plataforma web y espacio de experimentación tecnológica centrado en el desarrollo de interfaces modernas, 
+optimización de recursos digitales y automatización de procesos orientados a la ingeniería de software.
 </p>
 
 <a href="#about" class="btn">
@@ -250,6 +281,7 @@ Explorar Proyecto
 
 </header>
 
+<!-- SOBRE EL PROYECTO -->
 <section id="about">
 
 <h2 class="section-title">
@@ -257,18 +289,25 @@ Sobre el Proyecto
 </h2>
 
 <div class="about">
+    <p style="text-align: center; margin-bottom: 30px;">
+        <strong>Project Automata</strong> surge como una iniciativa técnica y académica destinada a consolidar competencias avanzadas en programación web, maquetación adaptativa y despliegue autónomo de sistemas estáticos en la nube.
+    </p>
 
-<p>
-Project Automata es una iniciativa académica creada
-para demostrar conocimientos en diseño web,
-publicación de sitios en línea y utilización
-de herramientas modernas de desarrollo.
-</p>
-
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>Visión Técnica</h3>
+            <p>Diseñado bajo una filosofía de rendimiento optimizado, priorizando tiempos de carga mínimos, estructuras limpias y compatibilidad total con estándares modernos de visualización.</p>
+        </div>
+        <div class="about-card">
+            <h3>Evolución Continua</h3>
+            <p>Un espacio en constante expansión donde se ponen a prueba configuraciones de código modular, esquemas de diseño interactivo y despliegues directos mediante control de versiones.</p>
+        </div>
+    </div>
 </div>
 
 </section>
 
+<!-- TECNOLOGÍAS -->
 <section id="tecnologias">
 
 <h2 class="section-title">
@@ -278,61 +317,63 @@ Tecnologías Utilizadas
 <div class="cards">
 
 <div class="card">
-<h3>HTML5</h3>
-<p>Base estructural moderna y semántica para aplicaciones web.</p>
+<h3>HTML5 Semántico</h3>
+<p>Implementación de etiquetas estructuradas para garantizar accesibilidad, un SEO óptimo y una jerarquía lógica de la información.</p>
 </div>
 
 <div class="card">
-<h3>CSS3</h3>
-<p>Diseño adaptable con una experiencia visual moderna.</p>
+<h3>CSS3 & Gradientes</h3>
+<p>Diseño visual inmersivo basado en paletas oscuras, transiciones fluidas y una adaptabilidad fluida (responsive design) para cualquier pantalla.</p>
 </div>
 
 <div class="card">
 <h3>GitHub Pages</h3>
-<p>Publicación gratuita de sitios web estáticos.</p>
+<p>Plataforma de alojamiento en la nube utilizada para la integración continua, control de cambios y despliegue rápido de código estático.</p>
 </div>
 
 <div class="card">
-<h3>Dominio Personalizado</h3>
-<p>Implementación de identidad digital propia.</p>
+<h3>Arquitectura Modular</h3>
+<p>Organización de componentes limpios que facilitan el mantenimiento, escalabilidad y futuras actualizaciones del sitio web.</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<!-- OBJETIVOS -->
+<section id="objetivos">
 
 <h2 class="section-title">
-Objetivos
+Objetivos del Desarrollo
 </h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Diseño Web</h3>
-<p>Crear interfaces modernas y atractivas.</p>
+<h3>Diseño de Interfaces</h3>
+<p>Construir experiencias visuales atractivas, minimalistas y alineadas con estéticas tecnológicas de alto nivel.</p>
 </div>
 
 <div class="card">
-<h3>Publicación Online</h3>
-<p>Desplegar contenido accesible para cualquier usuario.</p>
+<h3>Despliegue Autónomo</h3>
+<p>Dominar los ciclos de publicación en línea, gestionando repositorios remotos y resolución de rutas estáticas.</p>
 </div>
 
 <div class="card">
-<h3>Automatización</h3>
-<p>Explorar soluciones tecnológicas eficientes.</p>
+<h3>Lógica & Eficiencia</h3>
+<p>Aplicar principios de optimización de código para garantizar la máxima fluidez en cualquier entorno de hardware.</p>
 </div>
 
 <div class="card">
-<h3>Aprendizaje Continuo</h3>
-<p>Aplicar conocimientos adquiridos durante la formación.</p>
+<h3>Innovación Académica</h3>
+<p>Transformar conceptos teóricos de la ingeniería informática en aplicaciones prácticas y funcionales.</p>
 </div>
 
 </div>
 
 </section>
 
+<!-- AUTOR -->
 <section id="autor">
 
 <h2 class="section-title">
@@ -341,15 +382,14 @@ Autor del Proyecto
 
 <div class="author-box">
 
-<!-- Guarda la imagen del ojo azul oscuro como mi-foto.jpg en tu repositorio -->
+<!-- Recuerda que tu foto debe llamarse mi-foto.jpg (o mi-foto.jpeg según la extensión que subiste) -->
 <img src="mi-foto.jpeg" alt="Jonathan Santos" class="profile-img">
 
 <h3>Jonathan Santos</h3>
 
 <p>
-Desarrollador de Project Automata y responsable
-del diseño, implementación y publicación
-de este proyecto académico.
+Estudiante de Ingeniería en Sistemas y Computación en la UNEFA. Desarrollador principal de Project Automata, 
+apasionado por el hardware, la optimización de sistemas de bajo rendimiento, el scripting y la creación de soluciones digitales eficientes.
 </p>
 
 <div class="brand">
@@ -363,15 +403,15 @@ Powered by DARKGDM
 <footer>
 
 <p>
-Project Automata © 2026
+Project Automata © 2026 • Todos los derechos reservados.
 </p>
 
 <p>
-Diseño y desarrollo por Jonathan Santos
+Diseño, arquitectura y desarrollo por Jonathan Santos (DARKGDM).
 </p>
 
 <p>
-GitHub: DARKGDM
+Hospedado y desplegado mediante GitHub Pages.
 </p>
 
 </footer>
